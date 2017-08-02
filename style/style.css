@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Quicksand');
+
+/* Background */
+body {
+  background: url(../assets/images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Quicksand', sans-serif !important;
+  color: #eee !important;
+}
+
+a {
+  color: #eee !important;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+/* Header bar styles */
+.logo {
+  background: url(../assets/images/at-logo.png) no-repeat center;
+  /*width: 377px;*/
+  height: 60px;
+  margin: 20px 0 20px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Filter bar styles */
+.filter-form {
+  margin: 20px 0 10px 10px !important;
+}
+
+.filter-input {
+  width: 400px !important;
+}
+
+/* View selector styles */
+.view-selector-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  height: 40px;
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+
+.selector {
+  flex-basis: 50%;
+  flex-grow: 0;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 10px 0 10px;
+  padding-top: 8px;
+  height: 100%;
+  font-family: 'Merriweather', serif;
+}
+
+.selector.active {
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 2px;
+}
+
+.view-container {
+  display: inline;
+  text-align: left;
+}
+
+.break-me {
+  max-width: 500px;
+  word-wrap: break-word;
+}
+
+/* Data table styles */
+.table thead th {
+  font-size: 1.2em;
+  background-color: rgba(200, 200, 200, 0.3) !important;
+  border-bottom: 0px !important;
+}
+
+.table tr:hover {
+  background-color: rgba(200, 200, 200, 0.3) !important;
+}
